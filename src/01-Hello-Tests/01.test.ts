@@ -1,22 +1,27 @@
 import {mult, splitIntoWords, sum} from "./01";
 
+let a:number
+let b:number
+let c:number
+ beforeEach(()=>{
+     a=1
+     b=2
+     c=3
+ })
 test('sum should be correct', ()=>{
     //data
-    let a = 1
-    let b = 2
-    let c = 3
+
     //action
     const result1 = sum(a,b)
+    a=100
     const result2 = sum(b,c)
     //expect result
     expect(result1).toBe(3)
-    expect(result2).toBe(5)
+    expect(result2).toBe(102)
 })
 test('multiply should be correct', ()=>{
     //data
-    let a = 1
-    let b = 2
-    let c = 3
+
     //action
     const result1 = mult(a,b)
     const result2 = mult(b,c)
